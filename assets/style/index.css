@@ -15,13 +15,13 @@ body {
 }
 
 .cutlery {
-  background: url(/The-Resto/assets/img/ic-plate-big.png) no-repeat center;
-  padding: 50px 0;
+  background: url(/assets/img/ic-plate-big.png) no-repeat center;
+  padding: 80px 0;
 }
 
 .cutlery-negative {
   width: 100%;
-  background: url(/The-Resto/assets/img/ic-plate.png) no-repeat center;
+  background: url(/assets/img/ic-plate.png) no-repeat center;
   padding: 50px 0;
 }
 
@@ -93,7 +93,7 @@ span {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background: url(/The-Resto/assets/img/bg-slider-06.jpg) center/cover;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
 }
 #header-section .nav-container, #header-section ul {
   display: -webkit-box;
@@ -160,6 +160,9 @@ span {
   text-align: center;
   padding: 80px 0;
 }
+#header-section .cutlery {
+  padding: 50px 0;
+}
 
 #store-section .container {
   display: grid;
@@ -193,18 +196,18 @@ span {
 #store-section .img-container {
   height: 100px;
   width: 100px;
-  background: url(/The-Resto/assets/img/avatar-01.jpg) center/cover;
+  background: url(/assets/img/avatar-01.jpg) center/cover;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
   margin: 40px 0;
 }
 #store-section .bg-container {
-  background: url(/The-Resto/assets/img/store-01.jpg) center/cover;
+  background: url(/assets/img/store-01.jpg) center/cover;
 }
 
 #discover-section .container {
   width: 100%;
-  background: url(/The-Resto/assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
+  background: url(/assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
 }
 #discover-section .container-position {
   width: 50%;
@@ -301,28 +304,28 @@ span {
           clip-path: circle(48% at 50% 50%);
 }
 #discover-section .menu1 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-01.jpg) center/cover;
+  background: url(/assets/img/dish-item-01.jpg) center/cover;
 }
 #discover-section .menu2 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-02.jpg) center/cover;
+  background: url(/assets/img/dish-item-02.jpg) center/cover;
 }
 #discover-section .menu3 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-03.jpg) center/cover;
+  background: url(/assets/img/dish-item-03.jpg) center/cover;
 }
 #discover-section .menu4 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-04.jpg) center/cover;
+  background: url(/assets/img/dish-item-04.jpg) center/cover;
 }
 #discover-section .menu5 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-05.jpg) center/cover;
+  background: url(/assets/img/dish-item-05.jpg) center/cover;
 }
 #discover-section .menu6 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-06.jpg) center/cover;
+  background: url(/assets/img/dish-item-06.jpg) center/cover;
 }
 #discover-section .menu7 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-07.jpg) center/cover;
+  background: url(/assets/img/dish-item-07.jpg) center/cover;
 }
 #discover-section .menu8 .img-container {
-  background: url(/The-Resto/assets/img/dish-item-08.jpg) center/cover;
+  background: url(/assets/img/dish-item-08.jpg) center/cover;
 }
 
 #booking-section .container-position {
@@ -445,4 +448,114 @@ span {
   color: #21201E;
   background: none;
   border: 1px solid #21201E;
+}
+
+#event-section .container-position {
+  margin-bottom: 80px;
+}
+#event-section h3 {
+  font-weight: 400;
+  color: #EEEEEE;
+}
+#event-section h5 {
+  font-size: 1.5rem;
+  color: #21201E;
+}
+#event-section p {
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+#event-section a {
+  position: relative;
+  color: #21201E;
+  font-weight: 400;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+#event-section a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#event-section a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background: #B48464;
+  left: 0;
+  bottom: -5px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+#event-section a:hover::after {
+  width: 100%;
+}
+#event-section .text-container {
+  text-align: center;
+}
+#event-section .event-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 60% 38%;
+  gap: 20px;
+}
+#event-section .little-card-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+#event-section .little-card-container .text-container {
+  background: #EEEEEE;
+  text-align: left;
+  padding: 40px 20px;
+}
+#event-section .card-wrapper {
+  position: relative;
+}
+#event-section .card-wrapper .card-sticker {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#event-section .img-container1 {
+  background: url(/assets/img/event-01.jpg) center/cover;
+}
+#event-section .img-container2 {
+  background: url(/assets/img/event-02.jpg) center/cover;
+}
+#event-section .card-sticker {
+  position: absolute;
+  background: #21201E;
+  text-align: center;
+  padding: 20px;
+}
+#event-section .info-container {
+  padding: 40px 0;
+}
+#event-section .info-container span {
+  font-size: 1rem;
+}
+#event-section .info-container span i {
+  padding: 0 5px;
+}
+#event-section .big-card-container {
+  background: url(/assets/img/event-03.jpg) center/cover;
+  grid-row: -3/-1;
+  grid-column: 2/3;
+  padding: 40px;
+}
+#event-section .big-card-container .text-container {
+  position: relative;
+  height: 100%;
+  background: #EEEEEE;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#event-section .big-card-container .card-sticker {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#event-section .big-card-container h5 {
+  padding-top: 140px;
 }/*# sourceMappingURL=index.css.map */

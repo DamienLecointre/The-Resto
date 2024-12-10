@@ -5,7 +5,7 @@
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(/The-Resto/assets/img/bg-slider-06.jpg) center/cover;
+    background: url(/assets/img/bg-slider-06.jpg) center/cover;
   }
 
   .nav-container, ul {
@@ -62,5 +62,9 @@
   .text-container {
     text-align: center;
     padding: $containerBetweenPadding80;
+  }
+
+  .cutlery {
+    padding: $containerBetweenPadding50;
   }
 }
