@@ -1,0 +1,35 @@
+
+#store-section {
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text-container {
+    @include centerChild;
+    flex-direction: column;
+    background: $bgColorSecondary;
+    @include outilineDashedOffset;
+    padding: $containeraroundPadding5040;
+
+    p {
+      color: $colorPrimary;
+      text-transform: none;
+      text-align: center;
+      line-height: $LineHeight42;
+    }
+  }
+
+  .img-container {
+    height: 100px;
+    width: 100px;
+    background: url(/The-Resto/assets/img/avatar-01.jpg) center/cover;
+    clip-path: circle(50% at 50% 50%);
+    margin: $containerBetweenPadding40;
+  }
+
+  .bg-container {
+    background: url(/The-Resto/assets/img/store-01.jpg) center/cover;
+  }
+}

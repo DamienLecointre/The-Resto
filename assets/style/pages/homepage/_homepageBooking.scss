@@ -1,0 +1,100 @@
+
+#booking-section {
+
+  .container-position {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 35% 65%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .cutlery {
+    padding: $containerBetweenPadding80;
+  }
+
+  .time-container {
+    background: $bgColorPrimaryAccent;
+    @include outilineDashedOffset;
+    padding: $containeraroundPadding5040;
+  
+    h3 {
+      color: $colorSecondary;
+    }
+
+    h5 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: $fontSize16;
+      line-height: $LineHeight25;
+      letter-spacing: 2px;
+    }
+  }
+
+  .time-container-details {
+    padding: $containerBetweenPadding50;
+  }
+
+  .reservation-container {
+    background: $bgColorSecondary;
+    padding: 80px;
+  }
+
+  .input-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  select,
+  input:not([type="submit"]) {
+    height: 50px;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $bgColorPrimaryLight;
+    padding: 5px 0 5px 20px;
+  }
+
+  input[value],
+  option,
+  input::placeholder {
+    font-family: $fontFamilytertiary;
+    font-size: $fontSize14;
+    font-weight: $fontWeightRegular;
+    color: $colorPrimary;
+  }
+
+  input::placeholder {
+    color: $colorPrimaryLight;
+  }
+
+  input[type="submit"] {
+    font-family: $fontFamilytertiary;
+    font-size: $fontSize19;
+    font-weight: $fontWeightRegular;
+    letter-spacing: 5px;
+    color: $colorSecondary;
+    background: $bgColorPrimary;
+    padding: 20px 40px;
+    border-radius: 150px;
+    margin-top: 80px;
+    cursor: pointer;
+    transition: $transition04;
+
+    &:hover {
+      transform: scale(1.1);
+      color: $colorPrimary;
+      background: none;
+      border: 1px solid $bgColorPrimary;
+    }
+  }
+
+}
