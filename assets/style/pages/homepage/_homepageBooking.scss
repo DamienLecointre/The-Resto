@@ -76,6 +76,10 @@
     color: $colorPrimaryLight;
   }
 
+  input:focus {
+    border-bottom: 2px solid $bgColorAcent;
+  }
+
   input[type="submit"] {
     font-family: $fontFamilytertiary;
     font-size: $fontSize19;

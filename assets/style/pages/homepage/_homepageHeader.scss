@@ -6,6 +6,7 @@
     height: 100%;
     width: 100%;
     background: url(/assets/img/bg-slider-06.jpg) center/cover;
+    overflow: hidden;
   }
 
   .nav-container, ul {
@@ -62,6 +63,33 @@
   .text-container {
     text-align: center;
     padding: $containerBetweenPadding80;
+    animation: headerAnimation 2s forwards;
+  }
+
+  @keyframes headerAnimation {
+
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      transform: scale(5);
+    }
+    20% {
+      visibility: visible;
+      opacity: 20%;
+    }
+
+    40% {
+      opacity: 40%;
+    }
+
+    60% {
+      opacity: 60%;
+    }
+
+    100% {
+      opacity: 100%;
+      transform: scale(1);
+    }
   }
 
   .cutlery {
