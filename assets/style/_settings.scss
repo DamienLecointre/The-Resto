@@ -7,8 +7,20 @@ $containerBetweenPadding30: 30px 0;
 $containerBetweenPadding40: 40px 0;
 $containerBetweenPadding50: 50px 0;
 $containerBetweenPadding80: 80px 0;
+
 $containerSidePadding80: 0 80px;
-$containeraroundPadding5040: 50px 40px;
+
+$containerAroundPadding2040: 20px 40px;
+$containerAroundPadding4020: 40px 20px;
+$containerAroundPadding40100: 40px 100px;
+$containerAroundPadding5040: 50px 40px;
+
+$containerSpace20: 20px;
+$containerSpace40: 40px;
+$containerSpace80: 80px;
+$containerSpace130: 130px;
+$containerSpace145: 145px;
+$containerSpace200: 200px;
 
 $bgColorPrimary: #21201E;
 $bgColorPrimaryLight:#BCBAB4;
@@ -19,6 +31,8 @@ $bgColorAcent: #B48464;
 $transition02: 0.2s ease-in-out;
 $transition04: 0.4s ease-in-out;
 
+// GENERAL SETTINGS CONTAINERS 
+
 html {
   scroll-behavior: smooth;
 }
@@ -26,6 +40,16 @@ html {
 body {
   height: 100%;
   background: $bgColorPrimary;
+}
+
+.container-side-padding {
+  padding-left: calc((100% - 80%) /2);
+  padding-right: calc((100% - 80%) /2);
+}
+
+.container-side-padding-little {
+  padding-left: calc((100% - 50%) /2);
+  padding-right: calc((100% - 50%) /2);
 }
 
 .container-position {
@@ -45,7 +69,7 @@ body {
   padding: $containerBetweenPadding50;
 }
 
-// TEXT SETTINGS 
+// GENERAL TEXT SETTINGS 
 
 $fontFamilyPrimary: Allura, serif;
 $fontFamilySecondary: Roboto, serif;
@@ -73,19 +97,46 @@ $colorPrimaryLight:#BCBAB4;
 $colorSecondary: #EEEEEE;
 $colorAcent: #B48464;
 
-h1 {
+// TEXT SETTINGS 
+
+h1,
+h4,
+h5,
+a,
+span {
   font-family: $fontFamilySecondary;
+}
+
+h1,
+a,
+p {
+  color: $colorSecondary;
+}
+
+h2,
+h4,
+h5,
+span {
+  font-weight: $fontWeightRegular;
+}
+
+h1,
+h3,
+p,
+span {
+  text-transform: uppercase;
+}
+
+
+h1 {
   font-size: $fontSize51;
   font-weight: $fontWeightSemiBold;
-  color: $colorSecondary;
   letter-spacing: 10px;
-  text-transform: uppercase;
 }
 
 h2 {
   font-family: $fontFamilyPrimary;
   font-size: $fontSize56;
-  font-weight: $fontWeightRegular;
   color: $colorAcent;
 }
 
@@ -94,29 +145,22 @@ h3 {
   font-size: $fontSize32;
   font-weight: $fontWeightSemiBold;
   color: $colorPrimary;
-  text-transform: uppercase;
 }
 
 h4 {
-  font-family: $fontFamilySecondary;
   font-size: $fontSize24;
-  font-weight: $fontWeightRegular;
   line-height: $LineHeight42;
   color: $colorPrimary;
 }
 
 h5 {
-  font-family: $fontFamilySecondary;
   font-size: $fontSize19;
-  font-weight: $fontWeightRegular;
   color: $colorAcent;
 }
 
 a {
-  font-family: $fontFamilySecondary;
   font-size: $fontSize16;
   font-weight: $fontWeightLight;
-  color: $colorSecondary;
   cursor: pointer;
 }
 
@@ -124,16 +168,11 @@ p {
   font-family: $fontFamilytertiary;
   font-size: $fontSize16;
   font-weight: $fontWeightLight;
-  color: $colorSecondary;
   letter-spacing: 5px;
-  text-transform: uppercase;
 }
 
 span {
-  font-family: $fontFamilySecondary;
   font-size: $fontSize19;
-  font-weight: $fontWeightRegular;
   color: $colorPrimaryLight;
-  text-transform: uppercase;
 }
 

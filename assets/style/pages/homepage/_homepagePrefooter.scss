@@ -8,7 +8,7 @@
   .text-container {
     position: relative;
     background: $bgColorSecondary;
-    padding: 40px 100px;
+    padding: $containerAroundPadding40100;
     margin-bottom: -130px;
     
     p {
@@ -28,7 +28,7 @@
 
     h4 {
       font-size: $fontSize32;
-      padding-bottom: 20px;
+      padding-bottom: $containerSpace20;
     }
 
     span {

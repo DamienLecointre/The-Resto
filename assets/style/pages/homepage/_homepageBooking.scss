@@ -5,19 +5,15 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 35% 65%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-top: $containerSpace80;
+    padding-bottom: $containerSpace80;
     text-align: center;
-  }
-
-  .cutlery {
-    padding: $containerBetweenPadding80;
   }
 
   .time-container {
     background: $bgColorPrimaryAccent;
     @include outilineDashedOffset;
-    padding: $containeraroundPadding5040;
+    padding: $containerAroundPadding5040;
   
     h3 {
       color: $colorSecondary;
@@ -25,7 +21,7 @@
 
     h5 {
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: $containerSpace20;
     }
 
     p {
@@ -46,8 +42,7 @@
 
   .input-container {
     width: 100%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    @include gridSideEqual;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
   }
@@ -87,9 +82,9 @@
     letter-spacing: 5px;
     color: $colorSecondary;
     background: $bgColorPrimary;
-    padding: 20px 40px;
+    padding: $containerAroundPadding2040;
     border-radius: 150px;
-    margin-top: 80px;
+    margin-top: $containerSpace80;
     cursor: pointer;
     transition: $transition04;
 
@@ -100,5 +95,4 @@
       border: 1px solid $bgColorPrimary;
     }
   }
-
 }

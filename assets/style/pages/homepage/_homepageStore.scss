@@ -3,7 +3,8 @@
 
   .container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   }
 
   .text-container {
@@ -11,7 +12,7 @@
     flex-direction: column;
     background: $bgColorSecondary;
     @include outilineDashedOffset;
-    padding: $containeraroundPadding5040;
+    padding: $containerAroundPadding5040;
 
     p {
       color: $colorPrimary;
@@ -26,10 +27,15 @@
     width: 100px;
     background: url(/assets/img/avatar-01.jpg) center/cover;
     clip-path: circle(50% at 50% 50%);
-    margin: $containerBetweenPadding40;
-  }
+    margin: $containerBetweenPadding40;      
+    }
 
   .bg-container {
     background: url(/assets/img/store-01.jpg) center/cover;
+
+    // @media only screen and (max-width: 1216px) {
+    //   height: 300px;
+    //   width: 100%;
+    // }
   }
 }

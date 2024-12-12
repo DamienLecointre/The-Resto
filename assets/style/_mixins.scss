@@ -12,6 +12,11 @@
   justify-content: space-between;
 }
 
+@mixin gridSideEqual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @mixin navUnderline {
   content: "";
   position: absolute;
