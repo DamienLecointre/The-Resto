@@ -10,13 +10,25 @@
     background: $bgColorSecondary;
     padding: $containerAroundPadding40100;
     margin-bottom: -130px;
-    
+
+    @media only screen and (max-width: 620px) {
+      padding: $containerAroundPadding4060;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding: $containerAroundPadding4020;
+    }
+
     p {
       letter-spacing: normal;
       line-height: $LineHeight42;
       color: $colorPrimary;
       text-transform: none;
       padding: $containerBetweenPadding40;
+
+      @media only screen and (max-width: 400px) {
+        line-height: $LineHeight25;
+      }
     }
 
     i {

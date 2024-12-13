@@ -3,6 +3,10 @@
 
   .container-position {
     margin-bottom: $containerSpace200;
+
+    @media only screen and (max-width: 620px) {
+      display: none;
+    }
   }
 
   h3 {
@@ -48,9 +52,14 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 60% 38%;
     gap: 20px;
+
+    @media only screen and (max-width: 1160px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .little-card-container {
+    width: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
 
@@ -91,6 +100,8 @@
 
     span {
       font-size: $fontSize16;
+      text-wrap: nowrap;
+      line-height: $LineHeight25;
 
       i {
         padding: 0 5px;
@@ -99,10 +110,15 @@
   }
 
   .big-card-container {
+    width: 100%;
     background: url(/assets/img/event-03.jpg) center/cover;
     grid-row: -3 / -1;
     grid-column: 2 / 3;
     padding: $containerSpace40;
+
+    @media only screen and (max-width: 1160px) {
+      display: none;
+    }
 
     .text-container {
       position: relative;

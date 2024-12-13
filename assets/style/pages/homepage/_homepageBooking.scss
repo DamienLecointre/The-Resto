@@ -5,9 +5,18 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 35% 65%;
+    // grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding-top: $containerSpace80;
     padding-bottom: $containerSpace80;
     text-align: center;
+
+    @media only screen and (max-width: 1160px) {
+      display: block;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding-top: $containerSpace40;
+    }
   }
 
   .time-container {
@@ -28,16 +37,33 @@
       font-size: $fontSize16;
       line-height: $LineHeight25;
       letter-spacing: 2px;
+
+      @media only screen and (max-width: 400px) {
+        font-size: $fontSize12;
+        letter-spacing: normal;
+      }
     }
   }
 
   .time-container-details {
     padding: $containerBetweenPadding50;
+
+    @media only screen and (max-width: 400px) {
+      padding: $containerBetweenPadding30;
+    }
   }
 
   .reservation-container {
     background: $bgColorSecondary;
     padding: 80px;
+
+    @media only screen and (max-width: 620px) {
+      padding: $containerAroundPadding4060;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding: $containerAroundPadding4020;
+    }
   }
 
   .input-container {

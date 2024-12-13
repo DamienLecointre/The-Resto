@@ -23,6 +23,10 @@
   nav {
     width: 70%;
 
+    @media only screen and (max-width: 960px) {
+      display: none;
+    }
+
     li {
       transition: $transition04;
       &:hover {
@@ -46,6 +50,14 @@
 
   .social-container {
     width: 10%;
+
+    @media only screen and (max-width: 960px) {
+      width: 20%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 30%;
+    }
     
     i {
       font-size: $fontSize16;
@@ -60,8 +72,17 @@
 
   .text-container {
     text-align: center;
-    padding: $containerBetweenPadding80;
+    padding: $containerBetweenPadding60;
     animation: headerAnimation 2s forwards;
+
+    @media only screen and (max-width: 400px) {
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+
+    p {
+      line-height: $LineHeight25;
+    }
   }
 
   @keyframes headerAnimation {

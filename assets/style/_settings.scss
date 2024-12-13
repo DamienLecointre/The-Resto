@@ -6,12 +6,14 @@
 $containerBetweenPadding30: 30px 0;
 $containerBetweenPadding40: 40px 0;
 $containerBetweenPadding50: 50px 0;
+$containerBetweenPadding60: 60px 0;
 $containerBetweenPadding80: 80px 0;
 
 $containerSidePadding80: 0 80px;
 
 $containerAroundPadding2040: 20px 40px;
 $containerAroundPadding4020: 40px 20px;
+$containerAroundPadding4060: 40px 60px;
 $containerAroundPadding40100: 40px 100px;
 $containerAroundPadding5040: 50px 40px;
 
@@ -45,6 +47,11 @@ body {
 .container-side-padding {
   padding-left: calc((100% - 80%) /2);
   padding-right: calc((100% - 80%) /2);
+
+  @media only screen and (max-width: 620px) {
+    padding-left: calc((100% - 90%) /2);
+  padding-right: calc((100% - 90%) /2);
+  }
 }
 
 .container-side-padding-little {
@@ -56,17 +63,29 @@ body {
   max-width: 1200px;
   width: 80%;
   margin: 0 auto;
+
+  @media only screen and (max-width: 620px) {
+    width: 90%;
+  }
 }
 
 .cutlery {
   background: url(/assets/img/ic-plate-big.png) no-repeat center;
   padding: $containerBetweenPadding80;
+
+  @media only screen and (max-width: 400px) {
+    padding: $containerBetweenPadding40;
+  }
 }
 
 .cutlery-negative {
   width: 100%;
   background: url(/assets/img/ic-plate.png) no-repeat center;
   padding: $containerBetweenPadding50;
+
+  @media only screen and (max-width: 400px) {
+    padding: $containerBetweenPadding40;
+  }
 }
 
 // GENERAL TEXT SETTINGS 
@@ -82,13 +101,15 @@ $fontSize17: 1.1rem;
 $fontSize19: 1.2rem;
 $fontSize24: 1.5rem;
 $fontSize32: 2rem;
-$fontSize56: 3.5rem;
+$fontSize40: 2.5rem;
 $fontSize51: 3.2rem;
+$fontSize56: 3.5rem;
 
 $fontWeightLight: 300;
 $fontWeightRegular: 400;
 $fontWeightSemiBold: 600;
 
+$LineHeight15: 15px;
 $LineHeight25: 25px;
 $LineHeight42: 42px;
 
@@ -132,12 +153,20 @@ h1 {
   font-size: $fontSize51;
   font-weight: $fontWeightSemiBold;
   letter-spacing: 10px;
+
+  @media only screen and (max-width: 400px) {
+    font-size: $fontSize32;
+  }
 }
 
 h2 {
   font-family: $fontFamilyPrimary;
   font-size: $fontSize56;
   color: $colorAcent;
+
+  @media only screen and (max-width: 400px) {
+    font-size: $fontSize40;
+  }
 }
 
 h3 {
@@ -145,6 +174,10 @@ h3 {
   font-size: $fontSize32;
   font-weight: $fontWeightSemiBold;
   color: $colorPrimary;
+
+  @media only screen and (max-width: 400px) {
+    font-size: $fontSize24;
+  }
 }
 
 h4 {

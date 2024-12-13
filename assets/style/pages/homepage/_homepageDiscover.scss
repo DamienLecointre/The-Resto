@@ -4,11 +4,31 @@
   .container {
     width: 100%;
     background: url(/assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
+
+    @media only screen and (max-width: 400px) {
+      background: none;
+    }
   }
 
   .container-position {
     width: 50%;
     padding-top: $containerSpace80;
+
+    @media only screen and (max-width: 1460px) {
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 1160px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 620px) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      padding-top: $containerSpace40;
+    }
   }
 
   .text-container {
@@ -17,6 +37,10 @@
     ul {
       @include centerSpaceBetweenChild;
       padding: 0 40px 40px;
+
+      @media only screen and (max-width: 400px) {
+        padding: 0 0 40px;
+      }
     }
 
     li {
@@ -31,6 +55,10 @@
     a {
       position: relative;
       font-size: $fontSize17;
+
+      @media only screen and (max-width: 400px) {
+        font-size: $fontSize14;
+      }
       
       &::after {
         @include navUnderline;
@@ -44,6 +72,10 @@
 
   .menu-wrapper {
     padding-bottom: $containerSpace130;
+
+    @media only screen and (max-width: 400px) {
+      padding-bottom: 0;
+    }
   }
 
   .menu-container {
@@ -53,10 +85,18 @@
     background: $bgColorSecondary;
     border-top: 5px solid $bgColorAcent;
 
+    @media only screen and (max-width: 400px) {
+      display: block;
+    }
+
     h4 {
       font-size: $fontSize12;
       line-height: $LineHeight25;
       text-transform: uppercase;
+
+      @media only screen and (max-width: 400px) {
+        line-height: $LineHeight15;
+      }
     }
 
     p {
@@ -65,6 +105,11 @@
       color: $colorPrimary;
       text-transform: capitalize;
       letter-spacing: normal;
+
+      @media only screen and (max-width: 400px) {
+        line-height: $LineHeight15;
+        margin-top: 5px;
+      }
     }
   }
 
@@ -83,12 +128,29 @@
     margin: 15px 15px;
     padding-bottom: $containerSpace20;
     border-bottom: 1px dashed $bgColorPrimary;
+
+    @media only screen and (max-width: 400px) {
+      font-size: $fontSize40;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 5px;
+    }
+
+    h5 {
+      @media only screen and (max-width: 400px) {
+        text-align: right;
+      }
+    }
   }
 
   .img-container {
     height: 100px;
     width: 100px;
     clip-path: circle(48% at 50% 50%);
+
+    @media only screen and (max-width: 400px) {
+      height: 70px;
+      width: 70px;
+    }
   }
 
   .menu1 {
