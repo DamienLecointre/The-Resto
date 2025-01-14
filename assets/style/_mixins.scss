@@ -1,0 +1,34 @@
+
+
+@mixin centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin centerSpaceBetweenChild {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin gridSideEqual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin navUnderline {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  background: $bgColorAcent;
+  left: 0;
+  bottom: -5px;
+  transition: $transition04;
+}
+
+@mixin outilineDashedOffset{
+  outline: 2px dashed #B48464;
+  outline-offset: -20px;
+}

@@ -1,0 +1,45 @@
+
+#store-section {
+
+  .container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+
+    @media only screen and (max-width: 620px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .text-container {
+    @include centerChild;
+    flex-direction: column;
+    background: $bgColorSecondary;
+    @include outilineDashedOffset;
+    padding: $containerAroundPadding5040;
+
+    p {
+      color: $colorPrimary;
+      text-transform: none;
+      text-align: center;
+      line-height: $LineHeight42;
+
+      @media only screen and (max-width: 400px) {
+        line-height: $LineHeight25;
+        letter-spacing: normal;
+      }
+    }
+  }
+
+  .img-container {
+    height: 100px;
+    width: 100px;
+    background: url(/assets/img/avatar-01.jpg) center/cover;
+    clip-path: circle(50% at 50% 50%);
+    margin: $containerBetweenPadding40;      
+    }
+
+  .bg-container {
+    background: url(/assets/img/store-01.jpg) center/cover;
+  }
+}
