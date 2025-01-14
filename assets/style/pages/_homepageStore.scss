@@ -34,12 +34,12 @@
   .img-container {
     height: 100px;
     width: 100px;
-    background: url(/assets/img/avatar-01.jpg) center/cover;
+    background: url(../../assets/img/avatar-01.jpg) center/cover;
     clip-path: circle(50% at 50% 50%);
     margin: $containerBetweenPadding40;      
     }
 
   .bg-container {
-    background: url(/assets/img/store-01.jpg) center/cover;
+    background: url(../../assets/img/store-01.jpg) center/cover;
   }
 }

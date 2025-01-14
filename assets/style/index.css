@@ -151,7 +151,7 @@ span {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
   overflow: hidden;
 }
 #header-section .nav-container, #header-section ul {
@@ -341,18 +341,18 @@ span {
 #store-section .img-container {
   height: 100px;
   width: 100px;
-  background: url(/assets/img/avatar-01.jpg) center/cover;
+  background: url(../../assets/img/avatar-01.jpg) center/cover;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
   margin: 40px 0;
 }
 #store-section .bg-container {
-  background: url(/assets/img/store-01.jpg) center/cover;
+  background: url(../../assets/img/store-01.jpg) center/cover;
 }
 
 #discover-section .container {
   width: 100%;
-  background: url(/assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
+  background: url(../../assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
 }
 @media only screen and (max-width: 400px) {
   #discover-section .container {
@@ -535,28 +535,28 @@ span {
   }
 }
 #discover-section .menu1 .img-container {
-  background: url(/assets/img/dish-item-01.jpg) center/cover;
+  background: url(../../assets/img/dish-item-01.jpg) center/cover;
 }
 #discover-section .menu2 .img-container {
-  background: url(/assets/img/dish-item-02.jpg) center/cover;
+  background: url(../../assets/img/dish-item-02.jpg) center/cover;
 }
 #discover-section .menu3 .img-container {
-  background: url(/assets/img/dish-item-03.jpg) center/cover;
+  background: url(../../assets/img/dish-item-03.jpg) center/cover;
 }
 #discover-section .menu4 .img-container {
-  background: url(/assets/img/dish-item-04.jpg) center/cover;
+  background: url(../../assets/img/dish-item-04.jpg) center/cover;
 }
 #discover-section .menu5 .img-container {
-  background: url(/assets/img/dish-item-05.jpg) center/cover;
+  background: url(../../assets/img/dish-item-05.jpg) center/cover;
 }
 #discover-section .menu6 .img-container {
-  background: url(/assets/img/dish-item-06.jpg) center/cover;
+  background: url(../../assets/img/dish-item-06.jpg) center/cover;
 }
 #discover-section .menu7 .img-container {
-  background: url(/assets/img/dish-item-07.jpg) center/cover;
+  background: url(../../assets/img/dish-item-07.jpg) center/cover;
 }
 #discover-section .menu8 .img-container {
-  background: url(/assets/img/dish-item-08.jpg) center/cover;
+  background: url(../../assets/img/dish-item-08.jpg) center/cover;
 }
 
 #booking-section .container-position {
@@ -791,10 +791,10 @@ span {
           transform: translate(-50%, -50%);
 }
 #event-section .img-container1 {
-  background: url(/assets/img/event-01.jpg) center/cover;
+  background: url(../../assets/img/event-01.jpg) center/cover;
 }
 #event-section .img-container2 {
-  background: url(/assets/img/event-02.jpg) center/cover;
+  background: url(../../assets/img/event-02.jpg) center/cover;
 }
 #event-section .card-sticker {
   position: absolute;
@@ -815,7 +815,7 @@ span {
 }
 #event-section .big-card-container {
   width: 100%;
-  background: url(/assets/img/event-03.jpg) center/cover;
+  background: url(../../assets/img/event-03.jpg) center/cover;
   grid-row: -3/-1;
   grid-column: 2/3;
   padding: 40px;
@@ -889,7 +889,7 @@ span {
   position: absolute;
   height: 100px;
   width: 100px;
-  background: url(/assets/img/avatar-02.jpg) center/cover;
+  background: url(../../assets/img/avatar-02.jpg) center/cover;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
   top: 0;
@@ -900,7 +900,7 @@ span {
 #pre-footer-section .bg-container {
   height: 360px;
   width: 100%;
-  background: url(/assets/img/gmap.jpg) center/cover;
+  background: url(../../assets/img/gmap.jpg) center/cover;
 }
 
 #footer-section .container {

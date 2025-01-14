@@ -3,8 +3,7 @@
 
   .container {
     width: 100%;
-    background: url(/assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
-    // background: url(../../../img/bg-menu-01.jpg) no-repeat center bottom/contain;
+    background: url(../../assets/img/bg-menu-01.jpg) no-repeat center bottom/contain;
 
     @media only screen and (max-width: 400px) {
       background: none;
@@ -156,49 +155,49 @@
 
   .menu1 {
     .img-container {
-      background: url(/assets/img/dish-item-01.jpg) center/cover;
+      background: url(../../assets/img/dish-item-01.jpg) center/cover;
     }
   }
 
   .menu2 {
     .img-container {
-      background: url(/assets/img/dish-item-02.jpg) center/cover;
+      background: url(../../assets/img/dish-item-02.jpg) center/cover;
     }
   }
 
   .menu3 {
     .img-container {
-      background: url(/assets/img/dish-item-03.jpg) center/cover;
+      background: url(../../assets/img/dish-item-03.jpg) center/cover;
     }
   }
 
   .menu4 {
     .img-container {
-      background: url(/assets/img/dish-item-04.jpg) center/cover;
+      background: url(../../assets/img/dish-item-04.jpg) center/cover;
     }
   }
 
   .menu5 {
     .img-container {
-      background: url(/assets/img/dish-item-05.jpg) center/cover;
+      background: url(../../assets/img/dish-item-05.jpg) center/cover;
     }
   }
 
   .menu6 {
     .img-container {
-      background: url(/assets/img/dish-item-06.jpg) center/cover;
+      background: url(../../assets/img/dish-item-06.jpg) center/cover;
     }
   }
 
   .menu7 {
     .img-container {
-      background: url(/assets/img/dish-item-07.jpg) center/cover;
+      background: url(../../assets/img/dish-item-07.jpg) center/cover;
     }
   }
 
   .menu8 {
     .img-container {
-      background: url(/assets/img/dish-item-08.jpg) center/cover;
+      background: url(../../assets/img/dish-item-08.jpg) center/cover;
     }
   }
 }

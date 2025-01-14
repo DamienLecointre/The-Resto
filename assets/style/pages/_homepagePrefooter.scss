@@ -52,7 +52,7 @@
     position: absolute;
     height: 100px;
     width: 100px;
-    background: url(/assets/img/avatar-02.jpg) center/cover;
+    background: url(../../assets/img/avatar-02.jpg) center/cover;
     clip-path: circle(50% at 50% 50%);
     top: 0;
     left: 50%;
@@ -62,6 +62,6 @@
   .bg-container {
     height: 360px;
     width: 100%;
-    background: url(/assets/img/gmap.jpg) center/cover;
+    background: url(../../assets/img/gmap.jpg) center/cover;
   }
 }
